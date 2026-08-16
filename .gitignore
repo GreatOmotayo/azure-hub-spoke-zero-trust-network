@@ -1,0 +1,14 @@
+# Real variable values - never commit, use terraform.tfvars.example as the template
+terraform.tfvars
+*.auto.tfvars
+
+# Local Terraform state and cache - state lives in the remote azurerm backend, not here
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+# Plan output files - may contain sensitive values in plain text
+*.tfplan

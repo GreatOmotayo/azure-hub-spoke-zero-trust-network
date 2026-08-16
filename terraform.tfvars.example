@@ -1,0 +1,14 @@
+platform_subscription_id = ""
+production_subscription_id = ""
+non_production_subscription_id = ""
+
+location = ""
+
+# CIDR values, firewall/bastion SKUs, and tags all have sensible defaults
+# in variables.tf and the module variables - override here only if this
+# specific deployment needs to differ from the documented design in
+# DECISIONS.md. Uncomment and edit only what you actually need to change:
+
+# hub_vnet_cidr = "10.0.0.0/16"
+# production_vnet_cidr = "10.1.0.0/16"
+# nonprod_vnet_cidr = "10.2.0.0/16"
