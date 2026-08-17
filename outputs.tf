@@ -69,3 +69,8 @@ output "log_analytics_workpace_name" {
   description = "Name of the centralized log abalytics workspace - for portal/KQL reference"
   value       = module.log_analytics.workspace_name
 }
+
+output "firewall_policy_id" {
+  description = "Resource ID of the hub firewall Policy"
+  value = module.hub.firewall_policy_id
+}
