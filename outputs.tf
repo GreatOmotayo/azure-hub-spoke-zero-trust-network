@@ -74,3 +74,8 @@ output "firewall_policy_id" {
   description = "Resource ID of the hub firewall Policy"
   value = module.hub.firewall_policy_id
 }
+
+output "shared_services_subnet_id" {
+  description = "Resource ID of the hub's reserved shared-services subnet"
+  value = module.hub.shared_services_subnet_id
+}

@@ -37,3 +37,8 @@ output "bastion_id" {
   description = "Resource ID of the Bastion host"
   value       = azurerm_bastion_host.hub.id
 }
+
+output "shared_services_subnet_id" {
+  description = "Resource ID of the hub's reserved shared services subnet"
+  value = azurerm_subnet.shared_services.id
+}
